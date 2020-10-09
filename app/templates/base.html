@@ -79,7 +79,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="index">
                                         <img class="logos" src="{% static 'img/Logo AFIP.png' %}" alt="">
                                     </a>
                                 </div>
@@ -88,7 +88,7 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li class="{% active_link 'index' 'active' %}"><a  href="{% url 'home' %}">Acceuil</a></li>
+                                            <li><a class="{% active_link 'index' 'active' %}" href="{% url 'index' %}">Acceuil</a></li>
                                             <li><a class="{% active_link 'service' 'active' %}" href="{% url 'service' %}">Nos services</a></li>
                                             <li><a class="{% active_link 'propos' 'active' %}" href="{% url 'propos' %}">A propos</a></li>
                                             <li><a class="{% active_link 'contact' 'active' %}" href="{% url 'contact' %}">Contacts</a></li>
